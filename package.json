@@ -1,0 +1,29 @@
+{
+  "name": "@evermeet/cli",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "em": "./bin/run.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@oclif/core": "^3.26.5",
+    "js-yaml": "^4.1.0",
+    "tty-table": "^4.2.3"
+  },
+  "oclif": {
+    "bin": "em",
+    "commands": "./src/commands",
+    "dirname": "em",
+    "topicSeparator": " "
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "type": "module"
+}
